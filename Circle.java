@@ -20,7 +20,9 @@ public class Circle extends Ellipse
 	double rad=0.0;
 	public Circle(String id, double radius)
 	{
+		//Calling the super constructor
 		super(id, radius, radius);
+		//setting the global variable to the radius
 		rad=radius;
 		// TODO: complete this...
 	}
@@ -43,6 +45,7 @@ public class Circle extends Ellipse
 	@Override
 	public double getPerimeter()
 	{
+		//calculating the perimeter
 		return 2*Math.PI*rad;
 		// TODO: complete this...
 	}
