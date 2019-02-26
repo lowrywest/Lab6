@@ -95,6 +95,7 @@ public abstract class Shape implements Comparable<Shape>
 	@Override
 	public int compareTo(Shape s)
 	{
+		return 0;
 		// TODO: complete this...
 	}
 
@@ -129,6 +130,7 @@ public abstract class Shape implements Comparable<Shape>
 	@Override
 	public String toString()
 	{
+		
 		// TODO: complete this...
 	}
 }
