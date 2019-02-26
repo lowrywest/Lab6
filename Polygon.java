@@ -21,7 +21,9 @@ public abstract class Polygon extends Shape
      */
     public Polygon(String id)
     {
+    	//calling the super constructor
         super(id);
+	//initalaizing the arraylist
         sideLengths = new ArrayList<Double>();
     }
 
@@ -33,6 +35,7 @@ public abstract class Polygon extends Shape
     @Override
 	public double getPerimeter()
     {
+    	//adding all the values in the arrayList to sum and returning it 
     	double sum=0.0;
     	for(int i=0; i<sideLengths.size();i++)
     	{
