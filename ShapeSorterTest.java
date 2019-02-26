@@ -53,8 +53,9 @@ public class ShapeSorterTest
 		sorter.addShape(b);
 		sorter.addShape(c);
 		sorter.addShape(d);
+		//sorts by the default the shapes before checking the equality
 		sorter.sortShapes();
-		
+		//checking the equality of the values to their expected
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(0), b);
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(1), d);
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(2), c);
@@ -80,9 +81,9 @@ public class ShapeSorterTest
 		sorter.addShape(s2);
 		sorter.addShape(s4);
 		sorter.addShape(s3);
-
+		//sorts by the area the shapes before checking the equality
 		sorter.sortShapes(new ShapeAreaComparator());
-
+		//checking for equality
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(0), s2);
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(1), s3);
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(2), s1);
@@ -109,8 +110,9 @@ public class ShapeSorterTest
 		sorter.addShape(s2);
 		sorter.addShape(s4);
 		sorter.addShape(s3);
+		//sorts by the perimeter the shapes before checking the equality
 		sorter.sortShapes(new ShapePerimeterComparator());
-
+		//checks the equality
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(0), s2);
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(1), s3);
 		Assert.assertEquals("Shapes ordered incorrectly...", sorter.shapes.get(2), s1);
@@ -141,12 +143,14 @@ public class ShapeSorterTest
 		sorter.addShape(s5);
 		sorter.sortShapes();
 		
+		//blank string to hold the expected output
 		String output="";
-		
+		//Looping through the arrayList and adding the toString value to output
 		for(int i=0; i<sorter.shapes.size(); i++)
 		{
 			output+=sorter.shapes.get(i).toString()+"\n";
 		}
+		//checking for equality
 		Assert.assertEquals("toString is incorrect...", output,sorter.toString());
 		
 		// TODO: complete this...
