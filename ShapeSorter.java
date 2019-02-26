@@ -34,6 +34,7 @@ public class ShapeSorter
 	 */
 	public void addShape(Shape s)
 	{
+		//adding the shape to the arrayList
 		shapes.add(s);
 		// TODO: complete this...
 	}
@@ -45,6 +46,7 @@ public class ShapeSorter
 	 */
 	public void sortShapes()
 	{
+		//default sort
 		Collections.sort(shapes);
 		// TODO: complete this...
 	}
@@ -59,6 +61,7 @@ public class ShapeSorter
 	 */
 	public void sortShapes(Comparator<Shape> comparator)
 	{
+		//sorting by a specified comparator
 		Collections.sort(shapes, comparator);
 		// TODO: complete this...
 	}
@@ -72,7 +75,7 @@ public class ShapeSorter
 	@Override
 	public String toString()
 	{
-		
+		// outputing the toString values of all the shapes in the arrayList.
 		String output="";
 		for(int i=0; i<shapes.size(); i++)
 		{
