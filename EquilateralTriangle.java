@@ -21,8 +21,11 @@ public class EquilateralTriangle extends Polygon
 	 */
 	public EquilateralTriangle(String id, double sideLength)
 	{
+		//Calling the super constructor
 		super(id);
+		//setting the local variable
 		this.sideLength=sideLength;
+		//adding the side lengths to the arraylist from polygon
 		sideLengths.add(sideLength);
 		sideLengths.add(sideLength);
 		sideLengths.add(sideLength);
@@ -38,6 +41,7 @@ public class EquilateralTriangle extends Polygon
 	@Override
 	public double getArea()
 	{
+		//calcuating the area
 		return Math.pow(sideLength, 2)*(Math.sqrt(3.0)/4);
 		// TODO: complete this...
 	}
