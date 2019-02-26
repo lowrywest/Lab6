@@ -19,11 +19,12 @@ public class Rectangle extends Polygon
 		return width*height;
 	}
 
-	public double getPerimeter()
+	/*public double getPerimeter()
 	{
 		return (width*2)+(height*2);
 		
 	}
+	*/
 	@Override
 	public String getShapeType() 
 	{

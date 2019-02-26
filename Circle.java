@@ -18,9 +18,9 @@ public class Circle extends Ellipse
 	 * @param radius The radius of the circle.
 	 */
 	double rad=0.0;
-	public Circle(String id, double radius)
+	public Circle( double radius)
 	{
-		super(id, radius, radius);
+		super("Circle", radius, radius);
 		rad=radius;
 		// TODO: complete this...
 	}

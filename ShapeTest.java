@@ -33,6 +33,11 @@ public class ShapeTest
 	@Test
 	public void RectangleTest()
 	{
+		Rectangle rect = new Rectangle("Rectangle1", 4.0, 5.0);
+		Assert.assertEquals("Rectangle area incorrect.", 20.0, rect.getArea(), 0.0001);
+		Assert.assertEquals("Rectangle perimeter incorrect.", 18.0, rect.getPerimeter(), 0.0001);
+		Assert.assertEquals("Rectangle type incorrect.", "Rectange", rect.getShapeType());
+		Assert.assertEquals("Rectangle ID incorrect.", "Rectangle1", rect.getId());
 		// TODO: complete this...
 	}
 
@@ -42,6 +47,11 @@ public class ShapeTest
 	@Test
 	public void TriangleTest()
 	{
+		EquilateralTriangle tri = new EquilateralTriangle("Triangle1", 3.0);
+		Assert.assertEquals("Rectangle area incorrect.", Math.pow(3.0, 2)*(Math.sqrt(3.0)/4), tri.getArea(), 0.0001);
+		Assert.assertEquals("Rectangle perimeter incorrect.", 9.0, tri.getPerimeter(), 0.0001);
+		Assert.assertEquals("Rectangle type incorrect.", "Triangle", tri.getShapeType());
+		Assert.assertEquals("Rectangle ID incorrect.", "Triangle1", tri.getId());
 		// TODO: complete this...
 	}
 
@@ -51,6 +61,20 @@ public class ShapeTest
 	@Test
 	public void TrapezoidTest()
 	{
+		Trapezoid trap= new Trapezoid("Trapezoid1", 3.0, 4.0, 5.0, 6.0);
+		double a = 3.0;
+		double b = 4.0;
+		double c = 5.0;
+		double d = 6.0;
+		double e = (a + b) / 2;
+		double f = Math.pow(b - a, 2) + Math.pow(c, 2) - Math.pow(d, 2);
+		double g = 2 * c * (b - a);
+
+		// Calculate:
+		Assert.assertEquals("Rectangle area incorrect.", e * c * Math.sqrt(1 - Math.pow(f/g, 2)), trap.getArea(), 0.0001);
+		Assert.assertEquals("Rectangle perimeter incorrect.", 18.0, trap.getPerimeter(), 0.0001);
+		Assert.assertEquals("Rectangle type incorrect.", "Triangle", trap.getShapeType());
+		Assert.assertEquals("Rectangle ID incorrect.", "Triangle1", trap.getId());
 		// TODO: complete this...
 	}
 

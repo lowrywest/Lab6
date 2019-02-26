@@ -39,6 +39,11 @@ public class EquilateralTriangle extends Polygon
 	}
 	
 
+	/*public double getPerimeter()
+	{
+		return sideLength*3;
+	}
+	*/
 	/**
 	 * Gets the shape type of the triangle.
 	 *

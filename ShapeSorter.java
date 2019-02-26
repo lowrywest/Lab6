@@ -23,6 +23,7 @@ public class ShapeSorter
 	 */
 	public ShapeSorter()
 	{
+		shapes= new ArrayList <Shape>();
 		// TODO: complete this...
 	}
 
