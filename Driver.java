@@ -17,7 +17,7 @@ public class Driver
 	public static void main(String[] args)
 	{
 		ShapeSorter sorter = new ShapeSorter();
-
+		
 		// Create several shapes:
 		Shape s1 = new Square("A", 4.0);
 		Shape s2 = new Rectangle("B", 4.0, 1.0);

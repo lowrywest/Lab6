@@ -13,9 +13,7 @@ public abstract class Polygon extends Shape
      */
     protected ArrayList<Double> sideLengths;
 
-    //public abstract double getArea();
-    
-   // public abstract String getShapeType();
+  
     /**
      * Initializes the sideLengths arraylist and sets the Shape's ID.
      *

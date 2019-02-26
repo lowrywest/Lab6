@@ -72,7 +72,13 @@ public class ShapeSorter
 	@Override
 	public String toString()
 	{
+		
 		String output="";
+		for(int i=0; i<shapes.size(); i++)
+		{
+			output+=shapes.get(i).toString()+"\n";
+		}
+		return output;
 		// TODO: complete this...
 	}
 

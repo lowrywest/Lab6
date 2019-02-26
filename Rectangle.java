@@ -9,6 +9,10 @@ public class Rectangle extends Polygon
 		super(id);
 		this.height=height;
 		this.width=width;
+		sideLengths.add(width);
+		sideLengths.add(width);
+		sideLengths.add(height);
+		sideLengths.add(height);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -19,12 +23,7 @@ public class Rectangle extends Polygon
 		return width*height;
 	}
 
-	/*public double getPerimeter()
-	{
-		return (width*2)+(height*2);
-		
-	}
-	*/
+	
 	@Override
 	public String getShapeType() 
 	{

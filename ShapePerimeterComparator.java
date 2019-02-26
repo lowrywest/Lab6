@@ -12,7 +12,7 @@ import java.util.Comparator;
  * @author Stephen
  * @version 2019-02-17
  */
-public class ShapePerimeterComparator implements Comparator<Shape>
+public class ShapePerimeterComparator implements Comparator<Shape> 
 {
     /**
      * Implementation of Comparator<Shape>'s compare method.

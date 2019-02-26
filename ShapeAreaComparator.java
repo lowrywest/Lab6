@@ -32,7 +32,7 @@ public class ShapeAreaComparator implements Comparator<Shape>
 	@Override
 	public int compare(Shape s1, Shape s2)
 	{
-		if(s1.getArea()<s2.getArea())
+		if(s1.getArea()<s2.getArea()) 
 		{
 			return -1;
 		}

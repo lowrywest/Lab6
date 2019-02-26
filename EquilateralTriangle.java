@@ -23,6 +23,10 @@ public class EquilateralTriangle extends Polygon
 	{
 		super(id);
 		this.sideLength=sideLength;
+		sideLengths.add(sideLength);
+		sideLengths.add(sideLength);
+		sideLengths.add(sideLength);
+		
 		// TODO: complete this...
 	}
 
@@ -38,12 +42,6 @@ public class EquilateralTriangle extends Polygon
 		// TODO: complete this...
 	}
 	
-
-	/*public double getPerimeter()
-	{
-		return sideLength*3;
-	}
-	*/
 	/**
 	 * Gets the shape type of the triangle.
 	 *
