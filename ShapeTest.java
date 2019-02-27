@@ -20,7 +20,9 @@ public class ShapeTest
 	@Test
 	public void SquareTest()
 	{
+		//creating the Square
 		Shape sqr = new Square("Square1", 3.0);
+		//checking for equality
 		Assert.assertEquals("Square area incorrect.", 9.0, sqr.getArea(), 0.0001);
 		Assert.assertEquals("Square perimeter incorrect.", 12.0, sqr.getPerimeter(), 0.0001);
 		Assert.assertEquals("Square type incorrect.", "Square", sqr.getShapeType());
@@ -33,7 +35,9 @@ public class ShapeTest
 	@Test
 	public void RectangleTest()
 	{
+		//creating the rectangle
 		Rectangle rect = new Rectangle("Rectangle1", 4.0, 5.0);
+		//checking for equality
 		Assert.assertEquals("Rectangle area incorrect.", 20.0, rect.getArea(), 0.0001);
 		Assert.assertEquals("Rectangle perimeter incorrect.", 18.0, rect.getPerimeter(), 0.0001);
 		Assert.assertEquals("Rectangle type incorrect.", "Rectange", rect.getShapeType());
@@ -47,7 +51,9 @@ public class ShapeTest
 	@Test
 	public void TriangleTest()
 	{
+		//creating the triangle
 		EquilateralTriangle tri = new EquilateralTriangle("Triangle1", 3.0);
+		//checking for equality
 		Assert.assertEquals("Rectangle area incorrect.", Math.pow(3.0, 2)*(Math.sqrt(3.0)/4), tri.getArea(), 0.0001);
 		Assert.assertEquals("Rectangle perimeter incorrect.", 9.0, tri.getPerimeter(), 0.0001);
 		Assert.assertEquals("Rectangle type incorrect.", "Triangle", tri.getShapeType());
@@ -61,7 +67,9 @@ public class ShapeTest
 	@Test
 	public void TrapezoidTest()
 	{
+		//creating the Trapezoid
 		Trapezoid trap= new Trapezoid("Trapezoid1", 3.0, 4.0, 5.0, 6.0);
+		//calcuating the area
 		double a = 3.0;
 		double b = 4.0;
 		double c = 5.0;
@@ -71,6 +79,7 @@ public class ShapeTest
 		double g = 2 * c * (b - a);
 
 		// Calculate:
+		//cheking for equality
 		Assert.assertEquals("Rectangle area incorrect.", e * c * Math.sqrt(1 - Math.pow(f/g, 2)), trap.getArea(), 0.0001);
 		Assert.assertEquals("Rectangle perimeter incorrect.", 18.0, trap.getPerimeter(), 0.0001);
 		Assert.assertEquals("Rectangle type incorrect.", "Triangle", trap.getShapeType());
